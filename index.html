@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="https://cdn.baykartech.com/media/upload/userFormUpload/IWQx1lcULk95pWF4PS3THa0QSial1Qd3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <h1>Quiz Application</h1>
+        <div class="time-container">
+            <span>Time Left: <span id="timer">30</span> seconds</span>
+        </div>
+        <div id="quizSection">
+            <div class="question">
+                <span id="questionNumber"></span>
+                <span id="questionText"></span>
+            </div>
+            <div class="all-selection">
+                <button id="selectionA"></button>
+                <button id="selectionB"></button>
+                <button id="selectionC"></button>
+                <button id="selectionD"></button>
+            </div>
+            <div class="info">You cannot select an answer for the first 10 seconds.</div>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
